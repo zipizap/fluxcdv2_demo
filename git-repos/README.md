@@ -6,7 +6,7 @@ To make this gogs lab more portable, I've left here the ssh-keys and config need
 ```
 # 1st-time clone
 cd <<same-dir-that-also-contains_subdir user1.ssh.config/ >>
-GIT_SSH_COMMAND="ssh -F $PWD/user1.ssh.config/config" git clone ssh://git@172.17.0.1:10022/user1/gitopsgitrepo.git
+GIT_SSH_COMMAND="ssh -F $PWD/user1.ssh.config/config" git clone ssh://git@gogs.docker/user1/gitopsgitrepo.git
 cd gitopsgitrepo
 git config core.sshCommand "ssh -F $PWD/../user1.ssh.config/config"
 
